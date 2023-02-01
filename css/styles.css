@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+/*
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f2f2f2;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+header {
+  background-image: url("../img/desktop/image-hero.jpg");
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-wrap {
+  max-width: 1158px;
+  padding: 64px 24px 0 24px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 192px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.close {
+  display: none;
+  cursor: pointer;
+}
+
+nav ul,
+.footer-left ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+nav ul li,
+.footer-left ul li {
+  list-style: none;
+}
+
+nav ul li a,
+.footer-left ul li a {
+  position: relative;
+  color: #fff;
+  line-height: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav ul li a:hover:after,
+.footer-left ul li a:hover:after,
+.footer-right ul li a:hover:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  left: calc(50% - 12px);
+  margin-top: 8px;
+}
+
+.top-title {
+  max-width: 1158px;
+  padding: 0 24px 0 24px;
+  margin: 0 auto;
+}
+
+.top-title span {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 72px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 40px;
+  margin-top: 123px;
+}
+
+/* vr section */
+.vr {
+  position: relative;
+  max-width: 1158px;
+  margin: 160px auto 184px auto;
+  padding: 0 24px;
+  display: flex;
+}
+
+.vr picture {
+  max-width: 731px;
+  height: auto;
+  margin: 0;
+}
+
+.vr picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.vr .vr-text {
+  position: absolute;
+  max-width: 500px;
+  padding: 96px 0 0 96px;
+  background-color: #fff;
+  margin-left: -130px;
+  right: 24px;
+  bottom: 0;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.vr-text p {
+  line-height: 25px;
+  opacity: 0.5;
+}
+/* end vr section */
+
+/* creations section */
+.creations {
+  position: relative;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 24px 186px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+#btn-see-all {
+  position: absolute;
+  right: 24px;
+  padding: 13px 38px;
+  border: 1px solid #000;
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+
+#btn-see-all:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.gallery {
+  max-width: 100%;
+  grid-column: span 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  margin-top: 55px;
+}
+
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-item:hover .overlay {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #000;
+}
+
+.gallery-item:hover span {
+  color: #000;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item picture img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gallery-item span {
+  display: block;
+  position: absolute;
+  bottom: 32px;
+  margin: 0 40px;
+  text-align: left;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+/* end creations section  */
+
+footer {
+  background-color: #000;
+}
+
+.footer-wrap {
+  display: flex;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 44px 24px 33px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left .logo {
+  margin-bottom: 24px;
+}
+
+.footer-right ul {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-right ul {
+  margin-bottom: 24px;
+}
+
+.footer-right ul li a {
+  position: relative;
+}
+
+.footer-right span {
+  line-height: 25px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 850px) {
+  .creations {
+    padding-bottom: 170px;
+  }
+
+  .creations :first-child {
+    grid-column: span 2;
+  }
+
+  #btn-see-all {
+    bottom: 0;
+    left: 24px;
+    margin: 0 auto 96px auto;
+  }
+
+  .creations h2 {
+    text-align: center;
+  }
+
+  .gallery {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    background-image: url("../img/mobile/image-hero.jpg");
+  }
+
+  .top-wrap {
+    position: relative;
+    display: block;
+    padding: 40px 0 0 0;
+    margin: 0 24px;
+  }
+
+  .logo {
+    max-width: 144px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    height: 650px;
+    top: 0;
+  }
+
+  nav ul li a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .top-title span {
+    font-size: 40px;
+    padding: 24px;
+    margin-top: 163px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  /* vr section */
+  .vr {
+    display: block;
+    margin: 96px auto 96px auto;
+  }
+
+  .vr picture img {
+    margin-bottom: 48px;
+  }
+
+  .vr .vr-text {
+    width: 100%;
+  }
+
+  .vr .vr-text {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    padding: 0 24px;
+    margin-left: 0;
+    right: 0;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .vr-text h2 {
+    margin-bottom: 16px;
+  }
+
+  .vr-text p {
+    text-align: center;
+  }
+  /* end vr section */
+
+  /* creations section  */
+  .gallery {
+    margin: 34px 0 0 0;
+    display: block;
+  }
+
+  .gallery-item {
+    margin: 0 0 24px 0;
+  }
+
+  .gallery-item span {
+    bottom: 20px;
+    margin: 0 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  /* end creations section  */
+
+  .footer-wrap {
+    display: block;
+    padding: 56px 24px 56px 24px;
+  }
+
+  .footer-left .logo {
+    margin-bottom: 32px;
+  }
+
+  .footer-left {
+    display: block;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .footer-left ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-right ul {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .footer-right span {
+    display: block;
+    text-align: center;
+  }
+}

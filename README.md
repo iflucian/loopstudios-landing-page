@@ -9,7 +9,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## The challenge
 
